@@ -1,0 +1,652 @@
+@font-face {
+    font-family: 'Adieu';
+    src: url('adieu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sporting';
+    src: url('Sporting.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+
+html {
+	font-family: 'Adieu';	
+	font-size: 100%;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+p {
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+blockquote {
+	margin: 1em 40px;
+}
+
+dfn {
+	font-style: italic;
+}
+
+mark {
+	background: #ff0;
+	color: white;
+}
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+audio:not([controls]),
+[hidden] {
+	display: none;
+}
+
+body {
+	margin: 0;
+	background-image: url("./images/background.jpg");
+}
+
+figure,
+form {
+	margin: 0;
+}
+
+.ir {
+	display: block;
+	text-indent: -999em;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+h1 {
+	font-weight: 100;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.csstransforms #wrap {
+	width: 100%;
+	position: fixed;
+}
+
+.csstransforms #offset {
+	width: 100%;
+}
+
+#title h1 {
+	margin-top: 15px;
+	margin-bottom: 3px;
+}
+
+#title h1 a {
+	font-size: 35px;
+	letter-spacing: 1px;
+	/*text-shadow:-10px 10px red, 10px -10px yellow;*/
+	z-index: 2;
+	position: relative;
+	color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+	border-bottom: 1px inset black;
+	display: inline-block;
+	font-weight: 100;
+	text-shadow: 0px 3px white;
+}
+
+#title h1 a:hover {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+#title p {
+	font-size: 11px;
+	color: #333;
+	font-family: 'Adieu';
+	font-style: italic;
+	margin: 0;
+}
+
+.csstransforms #container {
+	position: relative;
+	z-index: 1;
+	top: 0;
+}
+
+.csstransforms #content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#content div {
+	display: none;
+}
+
+/**** Base ****/
+
+body {
+	text-align: center;
+	color: ;
+	min-width: 800px;
+}
+
+a,
+a:visited {
+	color: black;
+	text-decoration: none;
+	font-family: 'Adieu';
+}
+
+a:hover {
+	color: rgb(93, 120, 145);
+	text-decoration: none;
+	font-family: 'Adieu';
+}
+
+section {
+	z-index: 3;
+	position: relative;
+}
+
+section img {
+	min-width: 10%;
+	max-height: 80%;
+	opacity: 0.95;
+}
+
+section a {
+	font-size: 12px;
+	display: inline-block;
+}
+
+section p {
+	font-size: 32px;
+	font-family: 'Adieu';
+	color: black;
+	display: block;
+}
+
+
+::-moz-selection {
+	background: black;
+	color: white;
+	text-shadow: 1px 1px gray;
+}
+
+::selection {
+	background: black;
+	color: white;
+	text-shadow: 1px 1px gray
+}
+
+/***************** No Transforms *****************/
+
+.no-csstransforms #container,
+.no-js #container {
+	position: relative;
+}
+
+.no-csstransforms #content section,
+.no-js #content section {
+	width: 100%;
+	height: 540px;
+
+	position: relative;
+}
+
+/***************** Transforms  *****************/
+
+.csstransforms #content {
+	width: 500px;
+}
+
+.csstransforms #content section {
+	width: 1000px;
+	height: 100%;
+	position: absolute;
+	padding-top: 20%;
+	margin: 0;
+}
+
+/***************** True 3d  *****************/
+
+.csstransforms3d #environment {
+	-webkit-perspective: 1920px;
+	-webkit-perspective-origin: center 200px;
+	-moz-perspective: 0px;
+	-moz-perspective-origin: center center;
+	-o-perspective: 0px;
+	-o-perspective-origin: center 200px;
+	perspective: 0px;
+	perspective-origin: center 200px;
+	width: 1920px;
+	margin: 0 auto;
+	height: 600px;
+}
+
+.csstransforms3d #content {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+#zoom-center {
+	position: fixed;
+	top: 50%;
+	left: 100%;
+	width: 200px;
+	height: 200px;
+	cursor: S-resize;
+	z-index: 6;
+	cursor: url("../../8njj3k6/RuTm0uehs/forward.png"), auto;
+
+}
+
+.zoom-out:hover {
+	background: rgba(0, 0, 255, 0.2);
+}
+
+.zoom-in.right:hover {
+	background: rgba(0, 0, 255, 0.2);
+}
+
+#zoom-left {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100%;
+	z-index: 5;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+}
+
+#zoom-left:hover {
+	cursor: url("../images/forward.png"), auto;
+}
+
+#zoom-right {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100px;
+	height: 100%;
+	z-index: 5;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+}
+
+#zoom-right:hover {
+	cursor: url("../images/forward.png"), auto;
+}
+
+#credit {
+	position: fixed;
+	width: 120px;
+	margin-left: -60px;
+	bottom: 0px;
+	left: 50%;
+	height: 10px;
+	color: #000;
+	font-family: 'Adieu';
+	font-size: 10px;
+}
+
+.csstransforms.no-touch #scroll-proxy {
+	height: 5400px;
+}
+
+.csstransforms.no-touch .sign-up #scroll-proxy {
+	height: 0;
+}
+
+#hud_container {
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	width: 800px;
+	margin-left: -400px;
+	min-height: 100px;
+	display: table;
+	font-size: 12px;
+}
+
+#hud {
+	width: auto;
+	min-height: 120px;
+	max-height: 300px;
+	overflow-y: auto;
+	background: transparent;
+	background: transparent;
+	border: none;
+	display: table-cell;
+	vertical-align: middle;
+	z-index: 777;
+	text-align: center;
+	font-size: 32px;
+	font-family: 'Adieu';
+	color: black;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+}
+
+#hud::-webkit-scrollbar {
+	height: 8px;
+	width: 8px;
+}
+
+#hud::-webkit-scrollbar-track-piece {
+	background-color: #eee;
+}
+
+#hud::-webkit-scrollbar-thumb {
+	margin-bottom: 10px;
+	margin-right: 10px;
+	background-color: #bbb;
+	border-bottom-left-radius: 4px 4px;
+	border-bottom-right-radius: 4px 4px;
+	border-top-left-radius: 4px 4px;
+	border-top-right-radius: 4px 4px;
+}
+
+#pinwheel {
+	position: fixed;
+	z-index: 69;
+	top: 50%;
+	left: 50%;
+	margin-left: -300px;
+	margin-top: -300px;
+	width: 600px;
+	height: 600px;
+	opacity: 0.8;
+	display: none;
+}
+
+.no-csstransforms3d #wrap {
+	position: relative !important;
+}
+
+.no-csstransforms3d #environment {
+	position: relative !important;
+}
+
+.no-csstransforms3d #content {
+	position: relative !important;
+	margin: 0 auto;
+}
+
+.no-csstransforms3d section {
+	margin: 0 auto;
+	position: relative !important;
+	display: inline-block !important;
+}
+
+#old-browser {
+	display: none;
+}
+
+.no-csstransforms3d #old-browser {
+	display: block;
+}
+
+.no-csstransforms3d #content div {
+	display: block;
+}
+
+#menu {
+	position: fixed;
+	z-index: 999;
+	top: 20px;
+	left: 20px;
+	float: left;
+	text-align: left;
+	font-size: 32px;
+	font-family: 'Adieu';
+	color: black;
+	display: block;
+	text-decoration-style: none;
+}
+
+#homebutton {
+	position: fixed;
+	z-index: 999;
+	top: 20px;
+	right: 20px;
+	float: right;
+	text-align: right;
+	font-size: 32px;
+	font-family: 'Adieu';
+	color: black;
+	display: block;
+	text-decoration-style: none;
+}
+
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+  }
+
+ul {
+  color: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+li {
+	font-size: 32px;
+	font-family: 'Adieu';
+	color: black;
+	display: block;
+	text-decoration-style: none;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.content, .modal {
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width: 100%;
+}
+
+.content {
+  background-color: orange;
+  z-index:100;
+}
+
+.modal {
+	z-index: 9999;
+	background-color: rgb(255, 255, 255);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+	color: white;
+	position: fixed;
+	overflow: auto;
+
+}
+
+.modal.active {
+  	opacity: 1;
+  	visibility: visible;
+  	transition: opacity 0.5s;
+}
+
+.content, .modal2 {
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width: 100%;
+}
+
+.modal2 {
+	z-index: 9999;
+	background-color: rgb(255, 255, 255);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+	color: white;
+	position: fixed;
+	overflow: auto;
+}
+
+.modal2.active {
+  	opacity: 1;
+  	visibility: visible;
+  	transition: opacity 0.5s;
+}
+
+.content, .modal3 {
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width: 100%;
+}
+
+.modal3 {
+	z-index: 9999;
+	background-color: rgb(255, 255, 255);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+	color: white;
+	position: fixed;
+	overflow: auto;
+}
+
+.modal3.active {
+  	opacity: 1;
+  	visibility: visible;
+  	transition: opacity 0.5s;
+}
+
+.content, .modal4 {
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width: 100%;
+}
+
+.modal4 {
+	z-index: 9999;
+	background-color: rgb(255, 255, 255);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+	color: white;
+	position: fixed;
+	overflow: auto;
+}
+
+.modal4.active {
+  	opacity: 1;
+  	visibility: visible;
+  	transition: opacity 0.5s;
+}
+
+.artikkel {
+    font-family: 'Sporting';	
+	width: 100%;
+	margin: auto;
+	width: 60%;
+	padding: 10px;	
+	margin-top: 50px;
+}
+
+.pealkiri {
+    font-family: 'Sporting';	
+	width: 100%;
+	margin: auto;
+	width: 60%;
+	padding: 10px;	
+	margin-top: 50px;
+}
